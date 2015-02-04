@@ -1,7 +1,11 @@
 <h1>Cats#index</h1>
 <p>Find me in app/views/cats/index.html.erb</p>
 <%= link_to "MY DASHBOARD", dashboard_path %>
+<hr>
 <% @cats.each do |cat| %>
 	<%= link_to cat.name, cat_path(cat.id) %><br>
 	<%= link_to "DESTROY THE KITTY", cat_path(cat.id), method: :delete %>
+<% end %>
+<% if flash[:notice] %>
+	<h2><%= flash.notice %></h2>
 <% end %>

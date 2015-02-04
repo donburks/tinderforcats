@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
 	#get '/dashboard', to: 'cats#dashboard'
 
-#	resource :dashboard 
+	resource :dashboard 
 
 #	get '/cats/:id/upvote', to: 'cats#upvote'
 #	get '/cats/:id/downvote', to: 'cats#downvote'

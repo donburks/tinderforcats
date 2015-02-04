@@ -1,6 +1,7 @@
 class CatsController < ApplicationController
   def index
 		@cats = Cat.all
+		flash.now.notice = "You last loaded ALL CATS"
   end
 
   def edit

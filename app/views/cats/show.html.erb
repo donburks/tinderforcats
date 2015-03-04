@@ -1,6 +1,7 @@
-<h1>Cats#show</h1>
-<p>Find me in app/views/cats/show.html.erb</p>
+<%= image_tag "http://placekitten.com/g/200/300" %>
 
-<% if flash.notice %>
-	<h2><%= flash.notice %></h2>
+<% if flash[:notice] %>
+	<h4><%= flash[:notice] %>
 <% end %>
+
+
